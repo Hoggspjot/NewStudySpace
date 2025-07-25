@@ -39,4 +39,5 @@ build/
 
 .idea/
 out/
-src/test/
+/src/test/
+
