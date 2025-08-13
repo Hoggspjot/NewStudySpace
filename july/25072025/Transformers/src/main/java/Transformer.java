@@ -1,30 +1,23 @@
+import Interfaces.EnergyGenerator;
+import Interfaces.Scanner;
+import Interfaces.Weapon;
+
+public abstract class Transformer {
+    Weapon slotWeapon;
+    EnergyGenerator slotGenerator;
+    Scanner slotScanner;
 
 
-
-public class Transformer {
-    private int x;
-
-    Gun gun_left;
-    Gun gun_right;
-
-
-    public Transformer(int x) {
-        this.x = x;
-        gun_left = new Gun(10);
-        gun_right = new Gun(10);
+    public void installWeapon(Weapon weapon) {
+        this.slotWeapon = weapon;
     }
 
-
-    public void run() {
-        this.x += 1;
+    public void installGenerator(EnergyGenerator generator) {
+        this.slotGenerator = generator;
     }
 
-    public int getX() {
-        return x;
-    }
-
-    public void fire() {
-        gun_right.fire();
-        gun_left.fire();
+    public void installScanner(Scanner scanner) {
+        this.slotScanner = scanner;
     }
 }
+
