@@ -18,6 +18,8 @@ public class sol10000 {
         }
 
 
+
+
     }
 
     public static class DownloadException extends Exception {
