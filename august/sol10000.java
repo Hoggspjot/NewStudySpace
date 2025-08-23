@@ -6,9 +6,11 @@ public class sol10000 {
     public static void main(String[] args) throws DownloadException {
 
 
-        try (FileInputStream inputStream = new FileInputStream("resources/bigFiles/big.txt")) {
+        try (FileInputStream inputStream = new FileInputStream("resources/bigFiles/small.txt")) {
             int length = inputStream.available();
-            System.out.println(length);
+            if (length < 1000) {
+                throw new DownloadException();
+            }
             byte[] buffer = new byte[inputStream.available()];
             System.out.println(buffer.length);
         } catch (FileNotFoundException e) {
