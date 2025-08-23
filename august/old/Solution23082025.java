@@ -1,3 +1,5 @@
+package old;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,7 +31,7 @@ public class Solution23082025 {
         }
 
 
-        Class classs =  Class.forName("Sol002");
+        Class classs =  Class.forName("old.Sol002");
         try {
             System.out.println((classs.getConstructor()));
         } catch (NoSuchMethodException e) {
