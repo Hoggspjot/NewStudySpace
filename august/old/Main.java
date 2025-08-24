@@ -1,3 +1,5 @@
+package old;
+
 import java.lang.reflect.Field;
 
 public class Main {
@@ -52,7 +54,7 @@ class Point {
 
     @Override
     public String toString() {
-        return "Point{" +
+        return "old.Point{" +
                 "x=" + x +
                 ", y=" + y +
                 '}';
@@ -78,7 +80,7 @@ class SupPoint extends Point {
 
     @Override
     public String toString() {
-        return "SupPoint{" +
+        return "old.SupPoint{" +
                 "x=" + getX() +
                 ", y=" + getY()
                 + ", " +"s=" + s +
